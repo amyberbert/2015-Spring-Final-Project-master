@@ -1,0 +1,213 @@
+/* Module.scss */
+
+body {
+    @include body-font;
+    background-color: #0a0a0a;
+    font-size: 27px;
+    line-height: 1.5em;
+}
+
+header[role="banner"] {
+    background: url('../img/banner.jpg') left center no-repeat;
+    @include headline-font;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 0px;
+}
+
+nav[role="navigation"] {
+    right: 10px;
+    top: 10px;
+}
+
+.main-about-text {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.main-about-text p:first-of-type {
+    margin-top: 0;
+}
+
+.main-about-text p:last-of-type {
+    margin-bottom: 0;
+}
+
+li {
+    color: #fff;
+    list-style: none;
+    padding: 5px 15px 5px 15px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 5px 30px 5px 15px;
+    display: inline-block;
+    align-content: center;
+}
+
+.menu ul {
+    margin-left: 20px;
+}
+
+nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    }
+
+a:link {
+    text-decoration: none;
+}
+
+a:link{
+    color: #506c6f;
+}
+a:visited{
+    color: #506c6f;
+}
+a:hover{
+    color: lighten(#fff,20%);
+    transition: color 300ms linear;
+}
+a:focus{
+    color: #506c6f;
+}
+a:active{
+    color: #506c6f;
+}
+
+div {
+    width: 33%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+figure {
+    position: relative;
+    text-align: center;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    transition: background-color 300ms linear;
+}
+
+figcaption:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+figcaption p {
+    @include body-font;
+    color: rgba(255, 255, 255, 0);
+    font-size: .75em;
+    line-height: 1.5em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 300ms linear;
+    z-index: 100;
+}
+
+figcaption:hover p {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.desceiption {
+    color: #fff;
+    margin-left: 100px;
+}
+
+p {
+    color: #fff;
+}
+
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1em;
+    padding-top: -20px;
+}
+
+.contact-info {
+    background-color: #2b2b2b;
+}
+
+.about-text {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+
+.outer {
+    margin-bottom: 0;
+}
+
+.main-resume li {
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+
+.resume-text-skills {
+    background-color: #2b3338;
+    padding: 10px 10px 2px 10px;
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+.resume-text {
+    background-color: #2b3338;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.main-resume h2 {
+margin: 20px 0 0 20px;
+}
+
+.main-resume li {
+    list-style: none;
+    line-height: 1.5em;
+}
+
+.main-plantforms figcaption p {
+@include body-font-italic;
+}
+
+.col-7 {
+margin-top: 25px;
+}
+
+.banner {
+width: 86%;
+margin: 20px 0 20px 8px;
+}
+
+.ticket {
+width: 86%;
+margin: 20px 0 20px 8px;
+}
